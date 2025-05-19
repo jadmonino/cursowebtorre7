@@ -10,13 +10,4 @@
   Aqui es donde vamos a guardar nuestros trabajos
   
 
-este archivo ha sido modificado
-dos veces.
-
-hola
-
-
-
-
-
-
+Este archivo ha sido modificado x dos veces en este mes
