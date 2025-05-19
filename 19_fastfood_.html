@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_fastfood</title>
+    <style>
+        body{
+            /* background-color: #2e1d07; */
+            color: #efb406;
+            margin: 0;
+            padding: 0;
+            /* background-color: #d6dbe3;   */
+        }
+        .contenedor{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+
+            border: 2px solid red;
+            background-color: #efb406;
+            width: 60%;
+            height: 800px;
+            margin: 0 auto;      
+        }
+        div{
+            border: 1px solid rgb(55, 55, 231);
+            border-radius: 10px;
+            background-color: #d6dbe3;
+            text-align: center;
+            gap: 3px 5px;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+        .uno{
+            background-image: url("imagen/windows-2360920_640.png");
+            background-size: contain;
+        }
+        .tres{
+            grid-column: 3 / span 2;
+        }
+        .cuatro{
+            grid-row: 2 / span 2;
+        }
+        .cinco, .siete{
+            grid-column: 2 / span 2;
+        }
+        
+    </style
+</head>
+<body>
+    <div class="contenedor">
+        <div class="uno">1</div>
+        <div class="dos">2</div>
+        <div class="tres">3</div>
+        <div class="cuatro">4</div>
+        <div class="cinco">5</div>
+        <div class="seis">6</div>
+        <div class="siete">7</div>
+        <div class="ocho">8</div>
+    </div>
+</body>
+</html>
