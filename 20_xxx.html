@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20_xxx</title>
+    <style>
+        .contenedor{
+                border: 2px solid blue;
+                background-color: rgb(244, 161, 161);
+                display: grid;
+                grid-template-columns: 2fr 1fr 2fr 4fr;
+                grid-template-rows: repeat(3, 1fr);
+                gap: 2px;
+                padding: 4px;
+                height: 150px;
+        }
+        div{
+            border: 1px solid black;
+            border-radius: 3px;
+            background-color: rgb(236, 226, 226);
+            text-align: center;
+
+            }
+            .uno{
+                grid-column: auto;
+            }
+            .dos{
+                grid-column: 2 / span 2;
+            }
+            .tres{
+                grid-column: 4;
+                grid-row: 1 / span 3;
+            }
+            .cuatro{
+                grid-column: 1 / span 2;
+            }
+            .seis{
+                grid-column: 1 / span 3;
+            }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="uno">uno</div>
+        <div class="dos">dos</div>
+        <div class="tres">tres</div>
+        <div class="cuatro">cuatro</div>
+        <div class="cinco">cinco</div>
+        <div class="seis">seis</div>
+    </div>
+</body>
+</html>
