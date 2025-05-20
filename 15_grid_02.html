@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15_grid_02</title>
+    <style>
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 120px 3fr 120px;
+        }
+        .contenedor div{
+                border: 3px solid blue;
+        }
+        .cabecera{
+            background-color: aquamarine;
+        }
+        .lateral{
+            background-color: brown;
+        }
+        .gat{
+            gap
+        }
+        .contenido{
+            background-color: blueviolet;
+        }
+        .pie{
+            background-color: rgb(138, 23, 58);
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecera">
+        <div>cabecera</div>
+        <div>aside</div>
+        <div>cuerpo</div>
+        <div>pie</div>
+    </div>
+</body>
+</html>

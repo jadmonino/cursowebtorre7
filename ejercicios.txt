@@ -1,0 +1,33 @@
+https://drive.google.com/drive/folders/1zDwfspI140n6jrz_hNc2Gv-OU5eHdB5K
+
+
+http://emkayoh.com/
+
+https://tech.microbit.org/
+
+https://thundergolfer.com/
+
+https://tinyteams.xyz/
+
+https://www.sevilla.org/fiestas-de-la-ciudad/feria-de-sevilla/bases-concurso-portada-feria-2025
+
+https://pinetools.com/es/selector-color-imagen
+
+https://acortar.link/mTJCFV
+
+https://bentogrids.com/shots/clt9vs41000047uy5a2c6lkho
+
+CREAR:
+- Perfil
+- Repositorio
+ 
+COPIAR
+- Repositorio en la nube: git clone <nombre del repositorio>
+
+COMMIT
+- Aceptar los cambios en local
+
+SINCRONIZAR
+- 
+
+https://github.com/jadmonino/cursowebtorre7

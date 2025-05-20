@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            line-height: 1.4lh;
+        }
+        .tarjeta{
+            border: 1px solid blue;
+            border-radius: 3px;
+            display: grid;
+            padding: 0.5rem;
+            grid-template-columns: 1fr 2fr;
+            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+        }
+        .contenedor{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .imagen{
+            width: 75px;
+            grid-row: ;
+        }
+    </style>
+</head>
+<body>
+    <div class="tarjeta">
+        <div><img src="imagen/imagen_bolt.png" alt="" class="imagen"></div>
+        <div class="titulo">bolt.new</div>
+        <div class="texto">AI full stack app builder. 0 to $40M ARR in 2 months w/ 15 people</div>
+        <div class="equipo">Team: 15</div>
+        <div class="dinero">$40M ARR</div>
+        <div class="enlace">View Jobs</div>
+        <div class="enlace">View Website</div>
+    </div>
+</body>
+</html>
