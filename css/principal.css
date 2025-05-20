@@ -33,6 +33,7 @@ main{
     box-shadow: 10px 12px 30px 5px rgba(0,0,0,0.71);
     -webkit-box-shadow: 10px 12px 30px 5px rgba(0,0,0,0.71);
     -moz-box-shadow: 10px 12px 30px 5px rgba(0,0,0,0.71);
+    border-radius: 20px;
 }
 main ul{
     list-style: none;
