@@ -1,0 +1,45 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    background-color: rgb(244, 236, 236);
+}
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+
+}
+.intro{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.intro h1{
+    text-align: center;
+    margin-top: 6rem;
+}
+.intro p{
+
+}
+.enlace{
+    background-color: blueviolet;
+    border-radius: 15px;
+    padding: 0.4rem;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    background-color: black;
+    color: rgb(255, 4, 4);
+}
+.join{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: brown;
+    color: #f8f4f4;
+    height: 80px;
+}
