@@ -15,14 +15,28 @@
             gap: 1rem;
             /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
             /* grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(200px, 1fr)); */
-            grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(50px, 100px));
+            /* grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(50px, 100px)); */
+            height: 800px;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            justify-items: center;
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* align-content: center; */
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            align-content: space-around;
+            place-content: start center;
         }
         .contenedor div{
             background-color: brown;
             border: 2px solid blue;
             color: white;
             /* height: 100px; */
-            min-height: 100px;
+            /* min-height: 100px; */
+
         }
         .uno{
             grid-row: 1 / -5;
@@ -45,12 +59,14 @@
 </head>
 <body>
    <div class="contenedor">
-    <div class="uno"><a href="#">pincha aqui</a>UNO</div>
+    <!-- <div class="uno"><a href="#">pincha aqui</a>UNO</div> -->
+    <div><a href="#">pincha aqui</a>UNO</div>
     <div>DOS</div>
     <div>TRES</div>
     <div>CUATRO</div>
     <div>CINCO</div>
-    <div id="seis">SEIS</div>
+    <!-- <div id="seis">SEIS</div> -->
+    <div>SEIS</div>
     <div>SIETE</div>
     <div>OCHO</div>
     <div>NUEVE</div>

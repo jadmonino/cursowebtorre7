@@ -57,3 +57,11 @@ footer{
     color: white;
     font-style: bolder;
 }
+/* .contenedor{ 
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(50px, 100px));
+    background-color: blue;
+    color: #000;
+    border: 1px solid red;
+    gap: 1px;
+}*/

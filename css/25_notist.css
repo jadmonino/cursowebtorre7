@@ -40,10 +40,14 @@ a:hover{
 .join{
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     background-color: brown;
-    color: #f8f4f4;
+    /* color: #f8f4f4; */
     height: 80px;
     margin-right: 0;
     margin-left: 0;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    text-transform: uppercase;
 }
