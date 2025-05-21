@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <STYle>
+        .contenedor{
+            display: grid;
+            width: 80%;
+            min-height: 100px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            padding: 20px;
+            gap: 1rem;
+            /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+            /* grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(200px, 1fr)); */
+            grid-template-columns: minmax(200px, 1fr) repeat(auto-fit, minmax(50px, 100px));
+        }
+        .contenedor div{
+            background-color: brown;
+            border: 2px solid blue;
+            color: white;
+            /* height: 100px; */
+            min-height: 100px;
+        }
+        .uno{
+            grid-row: 1 / -5;
+            /* grid-column: 1 / -1; */
+            grid-column: 1 / 2;
+            
+        }
+        #seis{
+            background-color: aquamarine;
+            color: blue;
+            grid-row: 1 / -5;
+            grid-column: 1 / 2;
+            /* z-index: 1; */
+        }
+        #seis:hover{
+            opacity: 0;
+            /* z-index: auto; */
+        }
+    </STYle>
+</head>
+<body>
+   <div class="contenedor">
+    <div class="uno"><a href="#">pincha aqui</a>UNO</div>
+    <div>DOS</div>
+    <div>TRES</div>
+    <div>CUATRO</div>
+    <div>CINCO</div>
+    <div id="seis">SEIS</div>
+    <div>SIETE</div>
+    <div>OCHO</div>
+    <div>NUEVE</div>
+    <div>DIEZ</div>
+    <div>ONCE</div>
+    <div>DOCE</div>
+   </div>
+
+</body>
+</html>
