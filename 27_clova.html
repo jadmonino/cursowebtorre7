@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página JOIN</title>
     <style>
-        /* .contenedor{
+        .contenedor{
             display: grid;
             grid-template-columns: 2fr repeat(5, 1fr);
             grid-template-rows: 1fr repeat(4, 1fr);
@@ -25,26 +25,36 @@
         }
         .arriba{
             grid-column: 2 / -1;
-        } */
-         .contenedor{
+        }
+
+         @media screen and (max-width: 900px) {
+        
+        .contenedor{
             display: grid;
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            max-height: fit-content;
+            max-width: 100vw;
             row-gap: 10px;
             border: 5px solid red;
+            margin: 0;
          }
          .contenedor div{
             min-height: 100px;
+            max-width: 100vw;
             border: 2px solid red;
          }
          .izquierda{
             grid-row: 1 / 2;
+            grid-column: 1 / 2;
             background-color: chocolate;
          }
          .arriba{
             grid-row: 22 / 23;
+            grid-column: 1 / 2;
             background-color: blueviolet;
          }
-         @media screen (max-width: 600px)
+         }
     </style>
 </head>
 <body>
