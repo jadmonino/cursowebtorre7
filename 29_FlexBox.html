@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .contenedor{
+            display: flex;
+            gap: 10px;
+            border: 1px solid red;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-basis: auto;
+            height: 500px;
+            /* justify-content: center; */
+            justify-content: space-around;
+            justify-content: flex-start;
+            align-items: center;
+            /* align-items: end; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            
+            
+
+        }
+        .uno, .dos, .tres{
+            border: 3px solid blue;
+            /* min-height: 100px; */
+            /* min-width: 100px; */
+            /* width: 100px; */
+            /* height: 100px; */
+        }
+        .uno{
+            /* flex-grow: 1; */
+            /* flex-shrink: 5; */
+            flex-flow: 1 1 auto;
+        }
+        .dos{
+            flex-grow: 2;
+        }
+        .tres{
+            flex-grow: 3;
+            flex-shrink: 7;
+            flex-basis: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="uno">uno -- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id accusamus, dolore consequatur voluptatum ea similique ullam beatae blanditiis quas quia minima perspiciatis explicabo hic? Quibusdam, vitae! Atque culpa rerum quas!</div>
+        <div class="dos">dos xxxxxxx</div>
+        <div class="tres">tres xxxxxxx</div>
+        <div class="uno">cuatro xxxxxxxxxx</div>
+        <div class="dos">cinco -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla culpa commodi consequuntur fugit, maiores temporibus. Voluptatibus veritatis eveniet quasi a, repudiandae modi et consequuntur natus facilis, nam iure accusantium?</div>
+        <div class="tres">seies xxxx</div>
+        <div class="uno">siete xxxxxxx</div>
+        <div class="dos">ocho xxx</div>
+        <div class="tres">nueve xxxxxxxx</div>
+    </div>
+</body>
+</html>
