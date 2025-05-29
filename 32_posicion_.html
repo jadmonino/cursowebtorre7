@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        /* div{
+            border: 5px solid blue;
+            margin: 20px;
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .posicion{
+
+        }
+        .relativo{
+            background-color: bisque;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: -1;
+        } */
+         .contenedor{
+            width: 800px;
+            height: 800px;
+            background-color: antiquewhite;
+            border: 2px solid blue;
+            margin: 0 auto;
+            position: relative;
+         }
+         .contenedor div{
+            width: 200px;
+            height: 200px;
+            /* position: relative; */
+            border: 1px solid red;
+         }
+         .caja1{
+            background-color: rgb(145, 230, 145);
+            left: 100px;
+            top: 100px;
+            /* position: absolute; */
+            position: fixed;
+         }
+         .caja2{
+            background-color: rgb(228, 147, 203);
+            left: 300px;
+            top: 300px;
+            /* position: absolute; */
+            position: sticky;
+         }
+         .caja3{
+            background-color: rgb(221, 213, 143);
+            left: 500px;
+            top: 500px;
+            /* position: absolute; */
+         }
+         header{
+            position: relative;
+         }
+         nav{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            top: 200px;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <!-- <div class="relativo">uno</div>
+    <div>dos</div>
+    <div>tres</div>
+    <div>cuatro</div>
+    <div>cinco</div>
+    <div>seis</div> -->
+    <div class="contenedor">
+        <div class="caja1">
+            <h1>uno</h1>
+        </div>
+        <div class="caja2">
+            <h1>dos</h1>
+        </div>
+        <div class="caja3">
+            <h1>tres</h1>
+        </div>
+         <div class="caja1">
+            <h1>uno</h1>
+        </div>
+        <div class="caja2">
+            <h1>dos</h1>
+        </div>
+        <div class="caja3">
+            <h1>tres</h1>
+        </div>
+         <div class="caja1">
+            <h1>uno</h1>
+        </div>
+        <div class="caja2">
+            <h1>dos</h1>
+        </div>
+        <div class="caja3">
+            <h1>tres</h1>
+        </div>
+    </div>
+</body>
+</html>
