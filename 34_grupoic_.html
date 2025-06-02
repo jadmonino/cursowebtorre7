@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Grupo IC</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: "roboto", sans-serif;
+            font-size: 14px;
+        }
+        header{
+            width: 100%;
+            border: 1px solid red;
+        }
+        nav{
+            width: 80%;
+            margin: 0 auto;
+            border: 1px dashed blue;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        h1{
+            font-size: 5rem;
+            color: white;
+        }
+        h3{
+            font-size: 2rem;
+            color: white;
+        }
+        .logo img{
+            width: 50px;
+        }
+        .menu ul{
+            list-style: none;
+        }
+        .menu ul li{
+            display: inline;
+            padding-right: 1.5rem; 
+        }
+        .section1{
+            background-image: url(imagenes/Carrusel-IC.webp);
+            background-size: contain;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .dibujitos{
+            display: flex;
+            align-items: end;
+            justify-content: space-evenly;
+        }
+        .titulo{
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="contenedor">
+            <div class="logo">
+                <a href=""><img src="imagenes/Logo-IC.png" alt="Logo-IC"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>SECTORES</li>
+                    <li>SERVICIOS</li>
+                    <li>PAISES</li>
+                    <li>HISTORIA</li>
+                    <li>POLÍTICA Y VALORES</li>
+                    <li>PROVEEDORES</li>
+                    <li>EMPLEO</li>
+                    <li>CONTACTOS</li>
+                    <li> ESP | ENG | FR </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="section1">
+        <div class="titulo">
+            <h1>FIT OUT & VALUE ENGINEERING</h1>
+            <h3>Proyectos únicos para empresas internacionales.</h3>
+        </div>
+        <div class="dibujitos">
+            <div>
+                <img src="imagenes/Reatail.png" alt="RETAIL" width="100px">
+                <h3>RETAIL</h3>
+            </div>
+            <div>
+                <img src="imagenes/Lujo.png" alt="LUJO" width="100px">
+                <h3>LUJO</h3>
+            </div>
+            <div>
+                <img src="imagenes/SAnitario.png" alt="SANITARIO" width="100px">
+                <h3>SANITARIO</h3>
+            </div>
+            <div>
+                <img src="imagenes/Oficinas.png" alt="OFICINAS" width="100px">
+                <h3>OFICINAS</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
