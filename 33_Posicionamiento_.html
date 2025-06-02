@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33_Posicionamiento</title>
+    <style>
+        .contenedor{
+            width: 300px;
+            height: 300px;
+            border: 2px dashed blue;
+            position: relative;
+        }
+        .contenedor div{
+            width: 120px;
+            height: 50px; 
+            font-weight: bold;
+            line-height: 1.5lh;
+            text-align: center;
+            border: 1px solid red;
+        }
+        .box_1{
+            /* position: relative; */
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            /* bottom: -100px; */
+            /* right: 0px; */
+            background-color: azure;
+        }
+        .box_2{
+            /* position: relative; */
+            position: absolute;
+            top: 0px;
+            /* left: 000px; */
+            /* bottom: 000px; */
+            right: 0px;
+            background-color: azure;
+        }
+        .box_3{
+            /* position: relative; */
+            position: absolute;
+            /* top: 000px; */
+            left: 0px;
+            bottom: 0px;
+            /* right: -100px; */
+            background-color: azure;
+        }
+        .box_4{
+            /* position: relative; */
+            position: absolute;
+            /* top: 000px; */
+            
+            bottom: 0px;
+            right: 0px; 
+            background-color: azure;
+         }
+         .box_5{
+            /* position: relative; */
+            position: absolute;
+            top: 000px;
+            left: 000px;
+            bottom: 000px;
+            right: 000px;
+            background-color: azure;
+            margin: auto;
+         }
+         .fijo{
+            width: 500px;
+            height: auto;
+            border: 2px solid black;
+            background-color: antiquewhite;
+            margin-top: 100px;
+            position: relative;
+         }
+         .fijo div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgb(153, 51, 51);
+            background-color: aqua;
+            margin-top: 10px;
+         }
+         .pega1{
+            position: sticky;
+            /* background-color: brown !important; */
+            background-image: url("imagen/03_imagen_1.jpg");
+            top: 0;
+            left: 0;
+         }
+         .pega2{
+            position: sticky;
+            background-image: url("imagen/1.png");
+            top: 100px;
+            left: 0;
+         }
+         header{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(218, 17, 17);
+            position: relative;
+         }
+         nav{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(173, 106, 23);
+            position: fixed;
+            z-index: 100;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3>opcion 1  |  opcion 2  |  opcion 3  |  opcion 4  |</h3>
+        </nav>
+    </header>
+   <div class="contenedor">
+    <div class="box_1">uno</div>
+    <div class="box_2">dos</div>
+    <div class="box_3">tres</div>
+    <div class="box_4">cuatro</div>
+    <div class="box_5">cinco</div>
+   </div>
+
+   <div class="fijo">
+    <div class="pega1">01</div>
+    <div class="hijo">02</div>
+    <div class="hijo">03</div>
+    <div class="pega2">04</div>
+    <div class="hijo">05</div>
+    <div class="hijo">06</div>
+    <div class="pega1">07</div>
+    <div class="hijo">08</div>
+    <div class="hijo">09</div>
+    <div class="hijo">10</div>
+    <div class="hijo">11</div>
+    <div class="pega2">12</div>
+    <div class="hijo">13</div>
+    <div class="hijo">14</div>
+    <div class="hijo">15</div>
+    <div class="hijo">16</div>
+    <div class="hijo">17</div>
+    <div class="hijo">18</div>
+    <div class="hijo">19</div>
+    <div class="hijo">20</div>
+   </div>
+</body>
+</html>
