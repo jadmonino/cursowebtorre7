@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADENAS DE TEXTO</title>
+    <script>
+        var cadena = "En un lugar de la \"mancha\" bla, bla, bla, bla";
+        console.log(cadena);
+        console.log(cadena.toUpperCase());
+        console.log(cadena.toLowerCase());
+
+        var tmp = cadena.toLowerCase();
+        console.log(tmp.indexOf("man")); // busca el lugar que ocupa una cadena
+
+        console.log(cadena.at(21)); // busca una cadena en una posicion
+        console.log(cadena.at(-1)); // busca la cadena que hay en el ultimo lugar
+        console.log(cadena.at(0)); // primer caracter de la cadena
+        console.log(cadena.slice(21,27)); // buscar caracteres entre dos posiciones
+
+        console.log("longitud: " + cadena.length)
+// --------------------------------------------------------------------------------
+        var objetivo = "bla";
+        var minuscula = cadena.toLowerCase();
+        var largo = objetivo.length;
+
+        var indice = minuscula.indexOf(objetivo);
+        console.log("indice: " + indice);
+        console.log(cadena.slice(indice, indice + largo)); // lo que se quiere buscar va entre parentesis.
+    
+        // -- https:\\codewars; ejercicios de diferentes niveles para aprender a programar con cualquier software.
+
+        // ---- BUSCAR Y REEMPLAZAR -------
+
+        console.log(cadena);
+        var modif = cadena.replace("bla", "sitio");
+        console.log(modif);
+
+        // ------
+        var numero = 124;
+        var texto = `Este
+        es un texto
+        en varias ${numero}  " // interpolacion ""
+        líneas`
+        console.log(texto);
+
+        var nombre = 'Paco';
+        var email = "paco@gmail.com";
+        var edad = 112;
+
+        var mensaje = `Hola soy ${nombre}, ${nombre} tengo ${edad} años y ${nombre} mi correo es ${email}`;
+        console.log(mensaje);
+
+
+    </script>
+</head>
+<body>
+    <h1> x x x </h1>
+</body>
+</html>
