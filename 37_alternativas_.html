@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,50 @@
         }
         console.log("despues del if"); */
 
-        var numero = 5;
-        if (numero % 2 == 1){console.log(`el numero ${numero} es IMPAR`);}
-        else {console.log(`el numero ${numero} es PAR`);}
-        var numero = 6;
-        if (numero % 2 == 1){console.log(`el numero ${numero} es IMPAR`);}
-        else {console.log(`el numero ${numero} es PAR`);}
+        // var numero = 5;
+        // if (numero % 2 == 1){console.log(`el numero ${numero} es IMPAR`);}
+        // else {
+        //     if(numero == 0)
+        //     {
+        //         console.log(`El numero es 0`);
+        //     }
+        //     console.log(`el numero ${numero} es PAR`);
+        //     }
+        //     else {
+        //         (console.log(`El numero ${numero} es PAR`))
+        //     }
+        
+        // var numero = 6;
+        // if (numero % 2 == 1){console.log(`el numero ${numero} es IMPAR`);}
+        // else {console.log(`el numero ${numero} es PAR`);}
+
+        // nota     < 5 suspenso
+        // nota entre 5 y 7 suficiente
+        // nota entre 7 y 9 notale
+        // nota     > 9 sobresaliente
+        
+        var nota = 10;
+        
+        if (nota < 5) {
+            console.log("SUSPENSO");
+        }
+        else {
+                if (nota < 7) {
+                console.log("SUFIFIENTE");
+                }
+                else {
+                if (nota < 9) {
+                    console.log("NOTABLE");
+                }
+                else {
+                    console.log("SOBRESALIENTE");
+                }
+            }
+        }
+            
+        
+
+
     </script>
 </body>
 </html>
