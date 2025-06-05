@@ -51,6 +51,83 @@
         var mensaje = `Hola soy ${nombre}, ${nombre} tengo ${edad} años y ${nombre} mi correo es ${email}`;
         console.log(mensaje);
 
+        // -----------------------------------------------------------------
+
+        var cadena = "Mi infancia son recuerdos de un patio de Sevilla, bla, bla, bla, bla," // --- y un huerto claro donde madura el limonero (Antonio Machado);
+        console.log(cadena);
+
+        
+        // 1.- Concatenar dos cadenas de texto.
+
+        var primera = "Primera parte de la cadena";
+        var segunda = "Segunda parte de la cadena";
+        var total = primera + " " + segunda;
+        console.log(total);
+
+        // 2.- Muestra la longitud de una cadena de texto.
+
+        var largo_txt = primera.length;
+        console.log(largo_txt);
+        
+        // 3.- Muestra el primer y último carácer de una cadena.
+
+        console.log(primera.at(0));
+        console.log(primera.charAt(0));
+        console.log(primera[0]);
+        
+        console.log(primera.at(-1));
+        console.log(primera.at(primera.length - 1));
+        console.log(primera.at(largo_txt - 1));
+
+        // 4.- Convierte a minúsculas y a mayúsculas una cadena.
+
+        console.log(primera.toUpperCase());
+        console.log(primera.toLocaleLowerCase());
+
+        // 5.- Crea una cadena de texto de varias líneas.
+
+        var varias = `una línea
+        otra
+        otra
+        otra`;
+        varias = "una línea \notra \notra \otra";
+        console.log(varias);
+
+        // 6.- Interpola el valor de una variable en una cadena.
+
+        console.log(`mi correo es ${email}`);
+
+        // 7.- Reemplaza todas la ocurrencias de una cadena.
+
+        var modificada = primera.replaceAll(`a`, `_A_`);
+        console.log(modificada + "\n" + primera);
+
+        // 8.- Comprueba si una cadena contiene una palabra concreta.
+
+        primera.indexOf("de");
+        console.log(primera.indexOf(" de "));
+
+        // 9.- Comprueba si dos cadenas son iguales.
+
+        console.log(primera == primera);
+        console.log(primera == segunda);
+
+        // 10.- Comprueba si dos cadenas tienen la misma longitud.
+
+        console.log(primera.length == segunda.length);
+
+        // ----------------------------------------------------------------------
+        
+        /* Programación estructurada
+
+
+        
+
+         
+
+
+                    
+
 
     </script>
 </head>
