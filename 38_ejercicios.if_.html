@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_A_.IF_</title>
+     <script>
+        // Ejercicios
+        
+        // 1. Imprime por consola tu nombre si una variable toma su valor
+
+        var nombre = `José Antonio`;
+        var prueba = `Hola`;
+        console.log(prueba,  nombre);
+        
+        // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
+
+        var usuario = `joseantonio`;
+        var contraseña = `joseantonio`;
+        var centinela = false;
+        
+        if (usuario == `joseantonio`) {
+            if(contraseña == `joseantonio`) {
+                centinela = true;
+            }
+            else{
+                console.log(`clave incorrecta`)
+                }
+        }
+        else{
+            console.log(`Usuario incorrecto`);
+        }
+
+        // OR ||
+        // AND &&
+        // NOT !
+            if(usuario == `joseantonio` && contraseña == `joseantonio`) {
+                console.log("Usuario dentro");
+            }
+            else{
+                console.log("Usuario o clave incorrectoS");
+            }
+        
+
+        // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+
+        var numero = 5;
+        if (numero == 0) {
+            console.log(`El numero es CERO`);
+        }
+        else{
+            if(numero > 0) {
+                console.log(`el numero ${numero} es POSITIVO`);
+            }
+            else{
+                console.log(`el numero ${numero} es NEGATIVO`);
+            }
+        }
+
+        // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+
+        var edad = 2;
+        var diferencia = 18-edad;
+
+        if(edad >= 18) {
+            console.log("Puede votar");
+        }
+        else{
+            console.log(`No puedes votar, te faltan ${diferencia} años`);
+        }
+
+        // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
+        //    dependiendo de la edad 
+
+        // uno == 12?console.log("Igual a 12"): console.log("NO es igual a == 12")  OPERADOR TERNARIO
+
+            var edad = 15;
+            edad >= 18?console.log("ADULTO"): console.log("MENOR");
+        // ------------------------------------------------------------    
+            var situacion = ``;
+            if (edad >= 18){
+                situacion = `adulto`;
+            }
+            else{
+                situacion = `Menor`;
+            }
+
+        // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+
+            var mes = 6;
+            if(mes < 4){
+                estacion = "invierno";
+            }
+            else{
+                if(mes <7){
+                    estacion = "primavera"
+                }
+                else{
+                    if(mes < 10){
+                        estacion = "verano"
+                    }
+                    else{
+                        estacion = "otoño"
+                        }
+                    }
+                }
+            
+        // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+                
+                var dias = 0;
+                if (mes == 2){
+                    dias = 28;
+                }
+                else{
+                    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12){
+                        dias = 31;
+                    }
+                    else{
+                        dias = 30;
+                    }
+                }
+                console.log(`El mes ${mes} tiene ${dias} dias.`);
+
+
+        // switch
+        switch (key) {
+            case value:
+               
+                break;
+        
+            default:
+                break;
+        }
+        var salida = ``;
+        switch (mes) {
+            case 1:
+                salida =`enero`
+                break;
+            case 2:
+                salida =`febrero`
+                break;
+            case 3:
+                salida =`marzo`
+                break
+        
+            default:
+                salida = `Otro mes`
+                break;
+        }
+        console.log(salida);
+
+
+        // 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+
+        var idioma = `es`;
+        switch (idioma) {
+            case `es`:
+                console.log(`Hola Mundo`);
+                break;
+            case `en`:
+                console.log(`Hello world`);
+                break;
+            case `fr`:
+                console.log(`Bonjour le monde`);
+                break;
+            default:
+                console.log(`Idioma desconocido`);
+                break;
+        }
+        
+        // 9. Usa un switch para hacer de nuevo el ejercicio 6
+        switch (mes) {
+            case 1:
+            case 2:
+            case 3:
+                console.log(`invierno`);                 
+                break;
+            case 4:
+            case 5:
+            case 6:
+                console.log(`primavera`);
+                break;
+            case 7:
+            case 8:    
+            case 9:
+                console.log(`verano`);
+                break;
+            case 10:
+            case 11:    
+            case 12:
+                console.log(`otoño`);
+                break;
+
+            default:
+                break;
+        }
+
+        // 10. Usa un switch para hacer de nuevo el ejercicio 7
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
