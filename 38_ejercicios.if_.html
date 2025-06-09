@@ -1,46 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>_A_.IF_</title>
-     <script>
+    <script>
         // Ejercicios
-        
+
         // 1. Imprime por consola tu nombre si una variable toma su valor
 
         var nombre = `José Antonio`;
         var prueba = `Hola`;
-        console.log(prueba,  nombre);
-        
+        console.log(prueba, nombre);
+
         // 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
 
         var usuario = `joseantonio`;
         var contraseña = `joseantonio`;
         var centinela = false;
-        
+
         if (usuario == `joseantonio`) {
-            if(contraseña == `joseantonio`) {
+            if (contraseña == `joseantonio`) {
                 centinela = true;
             }
-            else{
+            else {
                 console.log(`clave incorrecta`)
-                }
+            }
         }
-        else{
+        else {
             console.log(`Usuario incorrecto`);
         }
 
         // OR ||
         // AND &&
         // NOT !
-            if(usuario == `joseantonio` && contraseña == `joseantonio`) {
-                console.log("Usuario dentro");
-            }
-            else{
-                console.log("Usuario o clave incorrectoS");
-            }
-        
+        if (usuario == `joseantonio` && contraseña == `joseantonio`) {
+            console.log("Usuario dentro");
+        }
+        else {
+            console.log("Usuario o clave incorrectoS");
+        }
+
 
         // 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
 
@@ -48,11 +49,11 @@
         if (numero == 0) {
             console.log(`El numero es CERO`);
         }
-        else{
-            if(numero > 0) {
+        else {
+            if (numero > 0) {
                 console.log(`el numero ${numero} es POSITIVO`);
             }
-            else{
+            else {
                 console.log(`el numero ${numero} es NEGATIVO`);
             }
         }
@@ -60,12 +61,12 @@
         // 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
 
         var edad = 2;
-        var diferencia = 18-edad;
+        var diferencia = 18 - edad;
 
-        if(edad >= 18) {
+        if (edad >= 18) {
             console.log("Puede votar");
         }
-        else{
+        else {
             console.log(`No puedes votar, te faltan ${diferencia} años`);
         }
 
@@ -74,75 +75,68 @@
 
         // uno == 12?console.log("Igual a 12"): console.log("NO es igual a == 12")  OPERADOR TERNARIO
 
-            var edad = 15;
-            edad >= 18?console.log("ADULTO"): console.log("MENOR");
+        var edad = 15;
+        edad >= 18 ? console.log("ADULTO") : console.log("MENOR");
         // ------------------------------------------------------------    
-            var situacion = ``;
-            if (edad >= 18){
-                situacion = `adulto`;
-            }
-            else{
-                situacion = `Menor`;
-            }
+        var situacion = ``;
+        if (edad >= 18) {
+            situacion = `adulto`;
+        }
+        else {
+            situacion = `Menor`;
+        }
 
         // 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
 
-            var mes = 6;
-            if(mes < 4){
-                estacion = "invierno";
+        var mes = 6;
+        if (mes < 4) {
+            estacion = "invierno";
+        }
+        else {
+            if (mes < 7) {
+                estacion = "primavera"
             }
-            else{
-                if(mes <7){
-                    estacion = "primavera"
+            else {
+                if (mes < 10) {
+                    estacion = "verano"
                 }
-                else{
-                    if(mes < 10){
-                        estacion = "verano"
-                    }
-                    else{
-                        estacion = "otoño"
-                        }
-                    }
+                else {
+                    estacion = "otoño"
                 }
-            
+            }
+        }
+
         // 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
-                
-                var dias = 0;
-                if (mes == 2){
-                    dias = 28;
-                }
-                else{
-                    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12){
-                        dias = 31;
-                    }
-                    else{
-                        dias = 30;
-                    }
-                }
-                console.log(`El mes ${mes} tiene ${dias} dias.`);
+
+        var dias = 0;
+        if (mes == 2) {
+            dias = 28;
+        }
+        else {
+            if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+                dias = 31;
+            }
+            else {
+                dias = 30;
+            }
+        }
+        console.log(`El mes ${mes} tiene ${dias} dias.`);
 
 
         // switch
-        switch (key) {
-            case value:
-               
-                break;
-        
-            default:
-                break;
-        }
+
         var salida = ``;
         switch (mes) {
             case 1:
-                salida =`enero`
+                salida = `enero`
                 break;
             case 2:
-                salida =`febrero`
+                salida = `febrero`
                 break;
             case 3:
-                salida =`marzo`
+                salida = `marzo`
                 break
-        
+
             default:
                 salida = `Otro mes`
                 break;
@@ -167,13 +161,14 @@
                 console.log(`Idioma desconocido`);
                 break;
         }
-        
+
         // 9. Usa un switch para hacer de nuevo el ejercicio 6
+
         switch (mes) {
             case 1:
             case 2:
             case 3:
-                console.log(`invierno`);                 
+                console.log(`invierno`);
                 break;
             case 4:
             case 5:
@@ -181,24 +176,50 @@
                 console.log(`primavera`);
                 break;
             case 7:
-            case 8:    
+            case 8:
             case 9:
                 console.log(`verano`);
                 break;
             case 10:
-            case 11:    
+            case 11:
             case 12:
                 console.log(`otoño`);
                 break;
-
             default:
+                console.log(mes)
                 break;
         }
 
         // 10. Usa un switch para hacer de nuevo el ejercicio 7
+        mes = 10;
+        switch (mes)
+        {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                console.log(`El mes ${mes} tiene 31 días`);
+                break;
+            case 2:
+                console.log(`El mes ${mes} tiene 28 días`);
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                console.log(`El mes ${mes} tiene 30 días`);
+            default:
+                console.log(`El mes ${mes} NO EXISTE`);
+                break;
+        }
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

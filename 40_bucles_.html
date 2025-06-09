@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40.- BUCLES_ </title>
+    <script>
+        // Bucle FOR: controlado por un contador.
+
+        var vueltas = 100;
+        // for(var i = 0; i <= vueltas; i++){
+        //     console.log(`La i vale ${i}`);
+        // }
+
+        // for(var i = 2; i <= vueltas; i+=2){
+        //     console.log(`La i vale ${i}`);
+        // }
+
+        // for(var i = 2; i <= vueltas; i+=2){
+        //     console.log(`La i vale ${i}`);
+        // }
+
+        // Imprimir los multiplos de 3, entre 0 y 100 
+
+        var resto = 0;
+        var base = 10;
+        var multiplos = [];
+        var no_mul = []
+        // for(var i = 0; i <= vueltas; i++){
+        //     resto = i % base;
+        //     if(resto == 0){
+        //     // console.log(`La i vale ${i}`);
+        //     multiplos.push(i);
+        //     // multiplos.pop(i);
+        //     // multiplos.shift(i);
+        //     }
+        // }
+        // console.log(multiplos);
+
+        // var numero = 0;
+        // var base = 4;
+        // for(var i = 0; i <= vueltas; i++){
+        //     numero = i % base;
+        //     if(numero != 0){
+        //     console.log(`La i vale ${i}`);
+        //     }
+        // }
+
+        // for(var i = 0; i <= vueltas; i++){
+        //     resto = i % base;
+        //     if(resto != 0){
+        //     // console.log(`La i vale ${i}`);
+        //     multiplos.push(i);
+        //     // multiplos.pop(i);
+        //     // multiplos.shift(i);
+        //     }
+        // }
+        // console.log(multiplos);
+
+        for(var i = 0; i <= vueltas; i++){
+            resto = i % base;
+            if(resto == 0){
+            // console.log(`La i vale ${i}`);
+            multiplos.push(i);
+            // multiplos.pop(i);
+            // multiplos.shift(i);
+            }
+            else{
+                no_mul.push(i);
+            }
+        }
+        console.log(`Multiplos de ${base}: ${multiplos}` );
+        console.log(`NO Multiplos de ${base}: ${no_mul}` );
+
+        // i = 0
+        // i++
+        // i += 1
+        // i = i + 1
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

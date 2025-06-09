@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39.- ARRAYS _</title>
+   <script>
+    // Una array es una variable que contiene un conjunto de valores.
+    var X = 1;
+    var Y = 'Hola';
+    var miArray = [];
+    // miArray [0];
+    // miArray [1];
+    // miArray [2];
+    // miArray [3];
+    // miArray [4];
+    miArray[5] ='ppoop';
+    miArray[6]='oko';
+    miArray[7] = 'oio';
+    var semana = new Array(7);
+    semana [0] = "Lunes";
+    semana [17] = 'Hola'
+    console.log('mi-------- ' + miArray.length);
+    console.log(miArray)
+    console.log(semana);
+
+    // console.log(miArray.values);
+    
+    miArray.push(1);
+    miArray.push(2);
+    miArray.push(3);
+    miArray.push(4);
+    miArray.push(5);
+    miArray.push("Hola caracola");
+    miArray.push(true);
+    miArray.push(1.2);
+    console.log(miArray);
+
+    var elemento;
+    elemento = miArray.pop();
+    console.log(`Elemento ` + elemento);
+    elemento = miArray.pop();
+    console.log("Elemento "+ elemento);
+    elemento = miArray.pop();
+    console.log(`Elemento ` + elemento);
+    elemento = miArray.pop();
+    console.log(`Elemento ` + elemento);
+
+
+    miArray.shift();
+    console.log('Longitud: '+ miArray.length);
+    var cadena = "Hola";
+    console.log(cadena[3]);
+
+    console.log('Elemento '  + elemento);
+
+    var lista = [];
+    lista[0] = 0;
+    lista[1] = 1;
+    lista[2] = 2;
+    console.log(lista.shift(0));
+    lista.unshift(-1);
+    lista.push(-2);
+    console.log(lista);
+
+    //------------------------------------------
+
+    var frutas = [];
+    frutas.push('fresa');
+    frutas.push('uva');
+    frutas.push('pera');
+    frutas.push('melogotón');
+    // frutas.pop('limón');
+    frutas.unshift('plátano');
+    frutas.unshift('mango');
+    // frutas.shift('naranja');
+    console.log("Array de frutas: " + frutas);
+    console.log(frutas);
+    // console.log(frutas.shift());
+    // console.log(frutas.pop());
+    var trozo = frutas.splice(2,1,"higos");
+    frutas.sort();
+    
+    console.log("Trozo: " + trozo);
+    console.log(frutas);
+
+
+    
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
