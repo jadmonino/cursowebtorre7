@@ -40,7 +40,8 @@
             'sandia',
             'melón',
             'mango',
-            'cereza'
+            'cereza',
+            'piña'
         ]
         document.write('<h2>Listado de Frutas</h2><hr>');
         document.write("<ul>");
@@ -57,8 +58,50 @@ texto = "<ul>";
     }       
         texto += "</ul>";
         document.write(texto);
-        
+    
+// -----------------------------------------------------------
+    
+    var cadena1 = 'carAcoLa';  // Caracola
+    var caracterM = cadena1.slice(0,1);
+    var resto = cadena1.slice(1);
+    
+    resto = resto.toLowerCase();
+    caracterM = caracterM.toUpperCase();
+
+    console.log(caracterM + resto);
+    
+    // --------------------------------------------------------
+
+    var convertido = cadena1[0].toUpperCase() + cadena1.slice(1).toLowerCase();console.log(convertido);
+
+    // ----------- Tabla de multiplicar del 5 -----------------
+
+    /*
+    1 x 5 = 5
+    2 x 5 = 10
+    ...
+    10 x 5 = 50
+    */
+
+    var multiplicador = 5;
+    var producto = 0;
+    document.write('<p>');
+        for(var i = 1; i<=10; i++){
+            producto = `${i} x ${multiplicador} = ${i * multiplicador}`;
+            console.log(producto);
+            document.write(producto + '<br>');
+        }
+        document.write('</p>');
     </script>
+    <style>
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: red;
+            background-color: black;
+            border-radius: 2px;
+            border: 2px solid;
+        }
+    </style>
 </head>
 <body>
    <h4>0000000</h4> 

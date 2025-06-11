@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 42 - FUNCIONES - </title>
+    <script>
+        // var nombre ='Tio Pepe';
+        function hola(nombre, edad, horoscopo) {
+            // console.log('Me pones un  ${nombre}, tienes ${edad} años y eres ${horoscapo}');
+            // alert('Hola');
+            return `Me pones un  ${nombre}, tienes ${edad} años y eres ${horoscopo}`;
+        }
+        var saludo = hola('fino Tio Pepe, por favor', 33, 'Arie');
+        alert(saludo);
+        console.log(saludo);
+
+// ----------------------------------------------------------------
+
+function suma(a, b) {
+    return a + b;  
+}
+var x = suma(19, 18);
+console.log(x);
+document.write(`<br>La suma es ${x}`);
+
+// ----------------------------------------------------------------
+
+var numeros = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+    function suma_array(sumandos){
+        // 1. comprobar entradas
+        // 2. hacer el trabajo
+        // 3. comprobar la salida
+
+        var tmp = 0;
+        for(var valor of sumandos){
+            tmp = suma(tmp, valor);
+        }
+        return tmp;
+    }
+    var x = suma_array(numeros);
+    console.log(x);
+    document.write(`<br>La suma es ${x}`);
+
+// ----------------------------------------------------------------
+
+function dos(){
+    x = uno();
+    return x;
+}
+
+function uno(){
+    return 1
+}
+console.log(dos());
+
+// ----------------------------------------------------
+
+function capitalize(texto){
+    var convertido = texto[0].toUpperCase() + texto.slice(1).toLowerCase();console.log(convertido);
+    return convertido;
+}
+console.log(capitalize('baBeRo toreRo'));
+
+// -------- HOLA MUNDO --> Hola Mundo ---------
+
+function superCapitalize(texto) {
+    var resultado = '';
+    var trozos = texto.split(' ');
+    // console.log(trozos);
+    for(var palabra of trozos){
+        resultado += capitalize(palabra) + ' ';
+    }
+    // console.log(resultado);
+    return resultado;  
+}
+var txt = superCapitalize('Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non iure odit ratione debitis quae dignissimos ipsam, aperiam soluta beatae? Accusantium eligendi voluptatum praesentium libero architecto unde facilis, aspernatur placeat?');
+console.log(txt);
+document.write('<br>' + txt);
+
+    </script>
+    
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia non iure odit ratione debitis quae dignissimos ipsam, aperiam soluta beatae? Accusantium eligendi voluptatum praesentium libero architecto unde facilis, aspernatur placeat?</p>
+</body>
+</html>
