@@ -78,6 +78,76 @@ var txt = superCapitalize('Lorem ipsum dolor sit amet consectetur adipisicing el
 console.log(txt);
 document.write('<br>' + txt);
 
+// ----------------------------------------------------------------
+
+// var cosa = 'Soy una cosa';
+// function muestraCosa(){
+//     console.log(cosa);
+// }
+
+// // -----------------------------------------------------------
+
+// function muestraCosa(cosa){
+//     console.log(cosa);
+// }
+// muestracosa('Soy una cosa');
+
+// ----- Hacer una función que nos indique si un texto tiene vocales ----
+
+function tieneVocales(texto){
+        var vocales = 'aeiouAEIOU';
+        var salida = false;
+        for(var letra of vocales){
+            if(texto.indexOf(letra) >=0){
+                salida = true;
+            }
+        }
+        return salida;
+}
+console.log(tieneVocales('mnpqrstammmmoébcdfgh'));
+
+// if(tieneVocales('paco') == true){
+//     console.log('La cadena tiene vocales')
+// }
+// else{
+//     console.log('La cadena NO tiene vocales');
+// }
+
+// -------------- Cuenta vocales ----------------------------
+// encuentra la primera vocal y suma una, sigue buscando y encuentra la segunda vocal y la suma.
+
+function cuentaVocales(texto){
+    
+    var vocales = 'aeiouAEIOU';
+    var contador = 0;
+        
+        for(var letra of texto){
+            if(vocales.indexOf(letra) >=0){
+                contador++;
+            }
+        }
+        return contador;   
+}
+console.log(cuentaVocales('PIO PIO Pio'));
+
+// --------------------------------------------------------
+
+function cuentaVocales2(texto){
+    
+    var vocales = 'aeiouAEIOU';
+    var contador = 0;
+    var largo = texto.lenght;
+        
+        for(var i = 0; i<largo; i++){
+            if(vocales.indexOf(texto[i]) >=0){
+                contador++;
+            }
+        }
+        return contador;   
+}
+console.log(cuentaVocales2('Lorem'));
+
+
     </script>
     
 </head>
