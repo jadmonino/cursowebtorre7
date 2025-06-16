@@ -67,3 +67,6 @@ console.log(numero);
 
 // 
 
+// 3.- Hacer una función que reciba un array de números 
+
+// [12,2,3,4,55,6,7,17,66]
