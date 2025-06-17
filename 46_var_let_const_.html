@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Let y Const</title>
+    <script>
+        var x = 1;
+        let y = 0;
+        const z = 'Hola';
+
+        function ejemploVar() {
+            var x = 10;
+            if(true){
+                var x = 20;      // las variables 'var' se pueden redefinir. y está definida en toda la uncion;
+                console.log(x);
+            }
+            console.log(x);  
+        }
+        console.log(x);
+
+
+        function ejemploLet() {
+            Let x = 10;
+            x++;
+            if(true);      
+                console.log(x);
+            }
+     
+
+        function ejemploConst() {
+            Const x = 10;    
+                console.log(x);
+            }
+
+        
+
+    </script>
+</head>
+<body>
+    <button onclick="ejemploVar()">Ejemplo Var</button>
+    <button onclick="ejemploLet()">Ejemplo Let</button>
+    <button onclick="ejemploConst()">Ejemplo Const</button>
+</body>
+</html>
