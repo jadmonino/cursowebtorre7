@@ -26,7 +26,19 @@ function muestraHora() {
 
     segundos = segundos.toString().padStart(2,'0');
 
-    reloj.textContent = `${hora}:${minutos}:${segundos}`;  
+    reloj.textContent = `${hora}:${minutos}:${segundos}`;
+    muestraMes();  
+}
+
+function muestraMes() {
+    let dia_mes = document.getElementById("dia_mes");
+    let fecha = new Date();
+    let dia = fecha.getDate();
+    let mes = fecha.getMonth();
+    let anno = fecha.getFullYear();
+
+    dia_mes.textContent = `${dia} / ${mes} / ${anno}`
+    
 }
 
 function parar() {

@@ -4,11 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/47_ejemplos_varios_.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
     <title>Ejemplos_Varios</title>
+    
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/seven-segment');
+    p{
+        font-family: 'Seven Segment', sans-serif;
+        font-size: 150px;
+        font-weight: 500px;
+        text-align: center;
+        margin: 0;
+    }
+    /* .esfera{
+        border: 2px solid black;
+        border-radius: 50px;
+        background-color: blue;
+        color: azure;
+    } */
+    .esfera{
+        border: 20px solid rgb(19, 4, 240);
+        border-radius: 50px;
+        height: fit-content;
+        width: 600px;
+        overflow: auto;
+        background-color: black;
+        color: aqua;
+        
+    }
+    /* .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    } */
+    .diames{
+        font-size: 75px;
+        margin-top: 2px;
+    }
+    .iniciar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        background-color: blue;
+        color: white;
+    }
+    .parar {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        background-color: red;
+        color: white;
+    }
+
+    </style>
 </head>
 <body>
-    <p id="reloj">00:00</p>
-    <button onclick="iniciar()">Iniciar</button>
-    <button onclick="parar()">Parar</button>
+    <div class="contenedor">
+        <div class="esfera">
+            <p id="reloj">00:00</p>
+            <p class="diames" id="dia_mes"></p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <button class="iniciar" onclick="iniciar()">Iniciar</button>
+    <button class="parar" onclick="parar()">Parar</button>
+    <hr>
 </body>
 </html>
