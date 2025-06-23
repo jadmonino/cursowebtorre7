@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/50_adivina_js"></script>
+    <title>Adivina el número</title>
+    <style>
+/* styles.css */
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Contenedor centrado */
+body > * {
+  max-width: 480px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+/* Títulos */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Resultado */
+#resultado {
+  font-weight: bold;
+  height: 1.75em; /* espacio vacío por si no hay mensaje */
+  padding-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Colores según acierto o error (actualiza vía JS) */
+#resultado.acertado {
+  color: #2e7d32; /* verde */
+}
+#resultado.errado {
+  color: #d32f2f; /* rojo */
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 0.4rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+/* Botones */
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0.25rem;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+button:disabled {
+  background-color: #90a4ae;
+  cursor: not-allowed;
+}
+
+/* Historial de intentos */
+#historial {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  border-top: 1px solid #ddd;
+}
+
+#historial li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+/* Botón de reiniciar */
+button[onclick="reiniciar()"] {
+  display: block;
+  margin: 1rem auto;
+  background-color: #388e3c;
+}
+
+button[onclick="reiniciar()"]:hover {
+  background-color: #2e7d32;
+}
+
+</style>
+</head>
+<body>
+    <h1>Adivina el número</h1>
+    <h2>Te quedan <span id="quedan">.....</span> intentos</h2>
+    <h2 id="resultado">Resultado</h2>
+    <form action="#" onsubmit="event.preventDefault()">
+        <label for="#">Número</label>
+        <input type="number" name="#" id="numero" min="1" max="100">
+        <button id="enviar" onclick="adivinar()">Adivinar</button>
+
+        <ul id="historial"></ul>
+    </form>
+
+    <button onclick="reiniciar()">OTRA PARTIDA</button>
+</body>
+</html>
